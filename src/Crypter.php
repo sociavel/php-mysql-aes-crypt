@@ -6,10 +6,11 @@
  * @author    Anne Jan Brouwer <anne.jan.brouwer@noprotocol.nl>
  * @author    Govert Verschuur <govert.verschuur@noprotocol.nl>
  * @author    Renan Martins Pimentel <renan.pimentel@gmail.com>
+ * @author    Humberto Oliveira Pinto <eu@h1berto.com.br>
  * @copyright 2016 NoProtocol
  * @license   https://opensource.org/licenses/MIT The MIT License (MIT)
  *
- * @version   2.0.1
+ * @version   2.0.2
  *
  * @link      http://www.smashingmagazine.com/2012/05/replicating-mysql-aes-encryption-methods-with-php/
  */
@@ -78,7 +79,7 @@ class Crypter
             OPENSSL_RAW_DATA | OPENSSL_ZERO_PADDING
         );
 
-        return rtrim($data, "\x00..\x10");
+        return utf8_encode(rtrim($data, "\x00..\x10"));
     }
 
     /**
