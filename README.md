@@ -10,33 +10,6 @@ Encrypt/decrypt values in PHP which are compatible with MySQL's `aes_encrypt()` 
 
 ## Installation
 
-### With Composer
-
-```
-$ composer require noprotocol/php-mysql-aes-crypt
-```
-
-```json
-{
-    "require": {
-        "noprotocol/php-mysql-aes-crypt": "^2.0.0"
-    }
-}
-```
-
-```php
-<?php
-require 'vendor/autoload.php';
-
-use NoProtocol\Encryption\MySQL\AES\Crypter;
-```
-
-<a name="install-nocomposer"/>
-
-### Without Composer
-
-Please use [Composer](http://getcomposer.org/). If you need to install manually, download [Crypter.php](https://github.com/noprotocol/php-mysql-aes-crypt/src/NoProtocol/Encryption/MySQL/AES/Crypter.php) from the repository and save the file into your project path.
-
 ```php
 <?php
 require 'path/to/Cryper.php';
